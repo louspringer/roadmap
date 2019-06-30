@@ -1,4 +1,10 @@
+This is a simple archtiectural roadmap management tool. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## AWS Amplify
+
+This project uses the [AWS Amplify Framework](https://aws-amplify.github.io/). 
 
 ## Available Scripts
 
@@ -66,3 +72,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
