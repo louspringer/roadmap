@@ -1,0 +1,7 @@
+{
+  schema: {
+    files: {
+      ignore: 'backend/api/**/*.graphql'
+      }
+  }
+}

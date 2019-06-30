@@ -1,0 +1,18 @@
+type Initiative @model {
+  id: ID!
+  name: String!
+  description: String
+  rankAttributeValues: [RankAttributeValue]
+}
+
+type RankAttributeValue {
+  rankAttribute: RankAttribute
+  attributeValue: Int
+}
+
+type RankAttribute @model {
+  id: ID!
+  name: String!
+  description: String
+  relativeWeight: Int 
+}

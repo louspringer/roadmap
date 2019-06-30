@@ -1,0 +1,32 @@
+$colours: (
+  'off-white': #F9F9F9,
+  'mint-green': #EFF9E6,
+  'yellow': #ffdd60,
+  'az-orange': #FF9900,
+);
+
+@each $name, $hex in $colours {
+  .#{$name} {
+    color: $hex;
+    &:visited {
+      color: $hex;
+    }
+  }
+  .bg-#{$name} {
+    background-color: $hex;
+  }
+  .b--#{$name} {
+    border-color: $hex;
+  }
+  .hover-bg-#{$name} {
+    &:focus,
+    &:active,
+    &:hover {
+      background-color: $hex;
+    }
+  }
+  .hover-#{$name}:hover,
+  .hover-#{$name}:visited:hover {
+    color: $hex
+  }
+}
