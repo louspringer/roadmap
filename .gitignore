@@ -121,3 +121,10 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# python
+.pyynb
+.python-version
+.ipynb_checkpoints
+.ipynb_checkpoints/*
+
