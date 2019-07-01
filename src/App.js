@@ -6,6 +6,7 @@ import { listInitiatives } from "./graphql/queries";
 
 class App extends Component {
   state = {
+    id: "",
     initiative: {
       name: ""
     },
@@ -46,6 +47,10 @@ class App extends Component {
     console.log(this.initiative);
   };
 
+  handleSetNote = ({ note, id }) => {
+    this.setState({note, id});
+  }
+
   handleDeleteInitiative = async initiativeId => {
     const { initiatives } = this.state;
     const input = { id: initiativeId };
@@ -81,7 +86,7 @@ class App extends Component {
         <div>
             {initiatives.map(item => (
             <div key={item.id} className="flex items-center">
-              <li className="list pa1 f3">{item.name}</li>
+              <li onClick={() => this.handleSetNote()(item)} className="list pa1 f3">{item.name}</li>
               <button
                 className="bg-transparent bn f4"
                 onClick={() => this.handleDeleteInitiative(item.id)}>

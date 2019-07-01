@@ -1,4 +1,4 @@
-This is a simple archtiectural roadmap management tool. 
+This is a simple architectural roadmap management tool. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
